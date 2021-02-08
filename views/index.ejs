@@ -1,0 +1,117 @@
+<%- include('partials/header') %>
+
+      <header class="header">
+        <div class="logo-box">
+          <img src="images/company-logo.png" alt="" class="logo">
+        </div>
+
+        <div class="contactMe">
+          <p>054-1234567</p>
+        </div>
+
+        <div class="text-box">
+          <h1 class="heading-primary">
+            <div class="logo-person-box">
+              <img class="person-logo" src="https://i.pinimg.com/600x315/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7.jpg"
+                alt="">
+            </div>
+            <span class="heading-primary-main">
+              Gamer & Developer
+            </span>
+          </h1>
+          <p class="about">
+            <span class="heading-primary-sub">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deleniti harum. Velit, voluptatibus. Cumque
+              earum, laborum dolorum et enim, ratione totam amet odio placeat dolores ipsam ullam temporibus nihil. Eos!
+              Ab eligendi facere ad expedita! Sed obcaecati, repellendus voluptate quibusdam totam eaque modi excepturi
+              numquam perspiciatis architecto ad quis beatae quaerat hic, labore id doloribus! Ab quaerat placeat
+              similique
+              eius.
+              Numquam tempore explicabo quaerat. Corrupti mollitia debitis expedita voluptas veniam dolore quas beatae,
+              ratione perspiciatis eius reiciendis cumque illo, laborum cupiditate eveniet repellendus vero officia
+              doloribus,
+              molestiae suscipit aperiam soluta.
+              Nam natus molestias consequatur, consequuntur eaque vero sequi. Maxime tenetur, pariatur perspiciatis,
+              vero
+              distinctio ipsa vel, harum soluta dolores libero officiis nam! Autem deleniti dolorem adipisci, quas
+              deserunt
+              ab
+              obcaecati!
+              Tenetur, nemo libero? Itaque repudiandae odio, non enim aut natus mollitia autem accusamus commodi officia
+              voluptas hic porro quibusdam atque recusandae corrupti. Enim laborum repellat ut nulla dolore ex! Iusto.
+            </span>
+          </p>
+        </div>
+      </header>
+
+      <!-- Carousel -->
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselControls" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselControls" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselControls" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ratione, itaque
+              doloremque consequuntur
+              sapiente provident nemo mollitia deserunt consectetur praesentium.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ratione, itaque
+              doloremque consequuntur
+              sapiente provident nemo mollitia deserunt consectetur praesentium.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ratione, itaque
+              doloremque consequuntur
+              sapiente provident nemo mollitia deserunt consectetur praesentium.
+            </p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <div id="form">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="images/Open Working Space.mp4" type="video/mp4">
+            Your browser in not supported!
+          </video>
+        </div>
+        <form action="/" method="POST">
+          <div class="heading-text">
+            <h3 class="heading">
+              Info
+            </h3>
+          </div>
+          <div class="mb-2">
+            <input class="form-control" type="text" name="fullName" placeholder="Full Name*" required />
+          </div>
+          <div class="mb-2">
+            <input class="form-control" type="email" name="email" placeholder="Email*" required />
+          </div>
+          <div class="mb-2">
+            <input class="form-control" type="text" name="phone" placeholder="phone">
+          </div>
+          <div class="mb-2">
+            <textarea class="form-control" name="message" placeholder="Leave a comment here" cols="50"
+              rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-light form-control">Submit</button>
+        </form>
+      </div>
+
+      <%- include('partials/footer') %>

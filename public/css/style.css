@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+/* About */
+
+.header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(
+    to right bottom, 
+    hsla(0, 0%, 32%, 0.8), 
+    hsla(0, 0%, 0%, 0.8)), 
+    url(https://kahanelaw.com/wp-content/uploads/2019/01/Adjournment-Lawyers.jpg);
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo-box {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+.contactMe {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.contactMe p {
+  color: #ffffff
+}
+
+.person-logo {
+  border: 3px solid white;
+  height: 17vh;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  animation-name: moveInBottomLogo;
+  animation-duration: 2s;
+}
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 60px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-weight: 900;
+  animation-name: moveInBottom;
+  animation-duration: 4s;
+}
+
+.about {
+  color: #ffffff;
+}
+
+.heading-primary-sub {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  width: 43.75rem;
+  animation-name: moveInLeftText;
+  animation-duration: 4s;
+}
+
+/* Carousel */
+#carouselControls {
+  padding: 100px 0 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to left bottom, 
+    hsla(0, 0%, 100%, 0.9), 
+    hsla(0, 0%, 86%, 0.9)),
+    url(https://medellinliving.com/wp-content/uploads/2016/09/default-lawyer-2992-1571-c.jpg);
+}
+
+.carousel-item {
+  font-family: 'Ubuntu';
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.carousel-item h2 {
+  font-weight: 700;
+}
+
+.carousel-item p {
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* form */
+form {
+  padding: 0 2rem;
+}
+
+form button {
+  margin-bottom: 1rem;
+}
+
+#form {
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-image:linear-gradient(
+    to right top,
+    hsla(0, 0%, 32%, 0.8), 
+    hsla(0, 0%, 0%, 0.8)
+  );
+  position: relative;
+}
+
+.heading-text {
+  color: #ffffff;
+  text-align: center;
+}
+
+.heading {
+  font-weight: 700;
+  padding: 1rem 0 1rem 0;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer  p{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #777;
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 0%, 100%, 0.9), 
+    hsla(0, 0%, 86%, 0.9));
+  text-align: center;
+  padding: 25px 25px;
+  margin: 0;
+}
+
+
+/* Animation for Logo */
+
+@keyframes moveInBottomLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for Name-About */
+
+@keyframes moveInBottom{
+  0% {
+    opacity: 0;
+    transform: translateY(-350px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for About-Text */
+
+@keyframes moveInLeftText {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px){
+  .person-logo {
+    margin-top: 30px;
+    border: 3px solid white;
+    height: 13vh;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    animation-name: moveInBottomLogo;
+    animation-duration: 2s;
+  }
+  
+  .heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 35px;
+  }
+  
+  .heading-primary-main {
+    font-size: 17px;
+    display: block;
+    font-weight: 900;
+    animation-name: moveInBottom;
+    animation-duration: 4s;
+  }
+
+  .heading-primary-sub {
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  width: 20rem;
+  animation-name: moveInLeftText;
+  animation-duration: 4s;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .contactMe p {
+    color: #ffffff;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .person-logo {
+    margin-top: 30px;
+    border: 3px solid white;
+    height: 17vh;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    animation-name: moveInBottomLogo;
+    animation-duration: 2s;
+  }
+  
+  .heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 35px;
+  }
+  
+  .heading-primary-main {
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    animation-name: moveInBottom;
+    animation-duration: 4s;
+  }
+
+  .heading-primary-sub {
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    width: 30rem;
+    animation-name: moveInLeftText;
+    animation-duration: 4s;
+  }
+
+  .logo {
+    height: 3.75rem;
+  }
+
+  .contactMe p {
+    color: #ffffff;
+    font-size: 0.875rem;
+  }
+
+  form {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  form {
+    padding: 0 10rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  form {
+    padding: 0 15rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px){
+  form {
+    padding: 0 20rem;
+  }
+}
+
+/* Ubuntu google font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
