@@ -12,8 +12,8 @@
 #### Frontend
 * HTML
 * CSS
-* BOOTSTRAP
+* BOOTSTRAP 5
 
 #### Backend
-*NodeJS
-*Express
+* NodeJS
+* Express
