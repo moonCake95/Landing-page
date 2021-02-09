@@ -3,4 +3,4 @@
 nodejs:
 ![alt text][logo]
 
-[logo]: https://p7.hiclipart.com/preview/322/725/287/node-js-javascript-npm-express-js-sharp.jpg
+[logo]: https://dashboard.snapcraft.io/site_media/appmedia/2018/05/Artboard_4.png
