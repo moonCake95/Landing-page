@@ -12,7 +12,7 @@ const app = express();
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(session({
-  secret: 'secret',
+  secret: 'secret', // change value
   cookie: { maxAge: 60000 },
   resave: false,
   saveUninitialized: false
